@@ -10,7 +10,8 @@ export default Backbone.Model.extend({
   login: function (email, password) {
     this.save({login:email, password:password}, {
       success: (response) => {
-        console.log(response);
+        hashHistory.push('search')
+        // console.log(response);
         }
       })
     }

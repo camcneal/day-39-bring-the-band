@@ -1,5 +1,6 @@
 import Backbone from 'backbone';
 import User from '../Models/User';
+import {hashHistory} from 'react-router';
 
 
 export default Backbone.Collection.extend({
@@ -9,7 +10,8 @@ export default Backbone.Collection.extend({
     signup(fullname, username,email, password) {
         this.create({fullname, username,email, password}, {
           success: (response) => {
-            console.log(response);
+            hashHistory.push('search')
+            // console.log(response);
           }
         })
       }
