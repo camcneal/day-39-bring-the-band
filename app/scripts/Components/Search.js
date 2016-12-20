@@ -14,7 +14,7 @@ handleSubmit(e) {
     return (
       <div className='search'>
         <form onSubmit={this.handleSubmit}>
-        <input type="text" ref="search" placeholder="Search"/>
+        <input type="text" ref="search" placeholder="Search Artist..."/>
         <input type="submit" value="Search" />
         </form>
         <SearchResults />

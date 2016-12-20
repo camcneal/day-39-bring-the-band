@@ -14,7 +14,7 @@ handleSubmit (e) {
   render () {
     return (
         <div className="login-wrapper">
-          <form onSubmit={this.handleSubmit}>
+          <form className="login-form" onSubmit={this.handleSubmit}>
             <input type="email" ref='email' placeholder="Email Address" />
             <input type="password" ref='password' placeholder="Password" />
             <input type="submit" value="Log in" />

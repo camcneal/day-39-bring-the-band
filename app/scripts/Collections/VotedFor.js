@@ -7,12 +7,12 @@ export default Backbone.Collection.extend({
     Model: Votes,
     url: 'https://api.backendless.com/v1/data/votes',
 
-    search(votes) {
-      this.fetch({
-        data: {
-          artist: artist,
-          image: image
-        }
-      })
-    }
+    // search(votes) {
+    //   this.fetch({
+    //     data: {
+    //       artist: artist,
+    //       image: image
+    //     }
+    //   })
+    // }
 });

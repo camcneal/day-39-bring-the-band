@@ -16,6 +16,7 @@ updateState() {
 },
 
   render () {
+    console.log(store.bands);
     let artists;
 if (this.state.data){
   artists =  this.state.data.map( (artist,i,arr)=> {

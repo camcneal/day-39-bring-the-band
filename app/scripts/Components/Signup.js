@@ -14,7 +14,7 @@ handleSubmit(e) {
   render () {
     console.log('signup');
     return (
-          <form onSubmit={this.handleSubmit}>
+          <form className="signup-form" onSubmit={this.handleSubmit}>
             <input type="text" ref="fullname" placeholder="Full Name" />
             <input type="text" ref="username" placeholder="username" />
             <input type="email" ref="emailaddress"  placeholder="Email Address" />

@@ -1,0 +1,33 @@
+.login-wrapper {
+  background-image: url("https://promowestlive.files.wordpress.com/2013/06/img_3115.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 35% 0;
+}
+
+.login-form,.signup-form {
+  background: #706574;
+  opacity: 0.8;
+  width: 50%;
+  max-width: 500px;
+  margin: 0  auto;
+  padding: 50px 10px;
+  text-align: center;
+  border-radius: 15px;
+
+  & input{
+    display: block;
+    padding: 3px;
+    margin: 30px auto;
+  }
+   & input[type=submit]{
+     background: $white;
+     border: 0;
+     border-radius: 5px;
+     padding: 10px 40px;
+   }
+
+
+}

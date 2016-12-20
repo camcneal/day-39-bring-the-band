@@ -5,7 +5,9 @@ import Vote from './Vote';
 
 export default React.createClass({
   getInitialState() {
-    return {}
+    return { votes: []
+
+    }
   },
 
   componentDidMount() {
@@ -15,15 +17,24 @@ export default React.createClass({
 
   updateState() {
     console.log(store.votes.models[0].attributes.data);
-    this.setState({data: store.votes.models[0].attributes.data})
+  this.setState({votes: store.votes.models[0].attributes.data});
+  },
+
+  componentWillUnmount() {
+    store.vote.off('update', this.updateState)
   },
 
     render () {
-
+let artists = this.state.votes.map((vote,i,arr)=> {
+  return (<li key={i}>
+          <img src={vote.image}/>
+          <p>{vote.name}</p>
+          </li>);
+});
       return (
         <div>
         <h2>Votes</h2>
-        <Vote />
+        <ul>{artists}</ul>
         </div>
       )
     }

@@ -5,7 +5,7 @@ import SignUp from './Components/Signup';
 import config from './config';
 import $ from 'jquery';
 import Search from './Components/Search';
-import Vote from './Components/Votes';
+import Votes from './Components/Votes';
 
 $(document).ajaxSend((evt, xhr, opts) => {
   if(opts.url.indexOf('spotify')===-1){
@@ -27,6 +27,6 @@ export default(
       <Route path='/' component={Login} />
       <Route path='/signup' component={SignUp} />
       <Route path='/search' component={Search} />
-      <Route path='/votes'   component={Vote}   />
+      <Route path='/votes'   component={Votes}   />
   </Router>
 );

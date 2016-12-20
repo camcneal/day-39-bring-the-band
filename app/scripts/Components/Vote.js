@@ -13,8 +13,6 @@ export default React.createClass ({
 
     return (
       <div className='votes-container'>
-      <li>
-      </li>
       </div>
     );
   }
